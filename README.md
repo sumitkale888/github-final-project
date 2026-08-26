@@ -43,3 +43,4 @@ Simple Interest = Principal × Rate × Time / 100
 ```
 
 _© 2022 XYZ, Inc._
+# Typo fixed
