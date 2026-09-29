@@ -1,45 +1,24 @@
-# Introduction to Git and GitHub
+# Accounts Microservice
 
-## Simple Interest Calculator
-
-A calculator that calculates simple interest given principal, annual rate of interest and time period in years.
-
-```
-# Git and GitHub Final Project
-
-## About This Project
-
-This repository is created as part of the Git and GitHub final project.
-
-The project demonstrates the basic concepts of Git and GitHub, including:
-
-- Creating and managing a GitHub repository
-- Using GitHub branches
-- Creating pull requests
-- Working with files and repositories
-- Using Git for version control
-- Managing project contributions
+[![CI Build](https://github.com/sumitkale888/github-final-project/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/sumitkale888/github-final-project/actions/workflows/ci-build.yaml)
 
 ## Project Name
+**Accounts Microservice**
 
-Git and GitHub Final Project
+A Flask-based RESTful Accounts service demonstrating Test Driven Development, Continuous Integration, security headers, CORS, Docker containerization, Kubernetes deployment preparation, and DevOps practices.
 
-## Author
+## REST API
+- `POST /accounts` — Create an account
+- `GET /accounts` — List all accounts
+- `GET /accounts/<id>` — Read an account
+- `PUT /accounts/<id>` — Update an account
+- `DELETE /accounts/<id>` — Delete an account
 
-Sumit Kale
-# Simple Interest Calculator
+## CI
+GitHub Actions checks out the repository, installs dependencies, runs Flake8 linting, and executes the unit tests with nose.
 
-This project is a simple interest calculator.
-
-The calculator computes simple interest based on the following inputs:
-
-- Principal amount
-- Rate of interest
-- Time period
-
-The simple interest is calculated using the following formula:
-
-Simple Interest = Principal × Rate × Time / 100
+## Run locally
+```bash
+pip install -r requirements.txt
+gunicorn --bind=0.0.0.0:8080 service:app
 ```
-
-_© 2022 XYZ, Inc._
