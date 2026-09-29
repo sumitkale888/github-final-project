@@ -1,5 +1,6 @@
 """REST routes for the Accounts service."""
 from flask import jsonify, request
+from service import app
 
 _ACCOUNTS = {}
 _NEXT_ID = 1
